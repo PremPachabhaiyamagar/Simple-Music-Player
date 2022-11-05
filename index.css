@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:"Poppins",sans-serif;
+}
+/* Main-section */
+section{
+  height: 100vh;
+  width: 100%;
+  background-image:url(bg.jpg);
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+}
+/* Header-section */
+section header{
+  width: 88%;
+  margin: auto;
+  padding:15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section header img{
+  width: 140px;
+}
+section header ul li{
+  list-style: none;
+  margin: 0 15px;
+  display: inline-block;
+  font-size: 15px;
+}section header ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+/* Container-section */
+.container{
+  width: 100%;
+  position: absolute;
+  top: 30%;
+}
+.left-col{
+  margin-left: 6%;
+}
+.left-col{
+  font-size: 50px;
+  line-height: 100px;
+  color: #fff;
+  float: left;
+}
+.right-col{
+  margin-top: 120px;
+  margin-right:6% ;
+  float: right;
+  display: flex;
+  align-items: center;
+}
+.right-col p{
+  font-size: 18px;
+  color:#fff;
+  font-weight: 400;
+  margin-right: 15px;
+}
+.right-col li{
+  list-style: none;
+}
+/* Rotation of image using webkit */
+.right-col li img{
+  position:relative;
+  width:80px;
+  cursor: pointer;
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+
+}
+@-webkit-keyframes spin{
+  100%{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin{
+  100%{-moz-transform: rotate(360deg);}
+}
+@keyframes spin{
+ 100%{-webkit-transform: rotate(360deg);}
+}
+
+/* Media Query for Responsiveness */
+@media (max-device-width:542px){
+  section{
+    width:100%;
+  }
+  section header{
+    width: 80%;
+    display: block;
+  }
+  section header ul{
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  section header ul li a{
+    color: #fff;
+  }
+  .right-col{
+    position: absolute;
+    bottom:-70px;
+    left: 23%;
+  }
+  section .container .right-col p{
+    color: #fff;
+  }
+}
+@media (min-device-width:300px) and (max-device-width:541px){
+  section header ul {
+    display: none;
+  }
+}

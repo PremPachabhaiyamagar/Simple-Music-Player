@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Simple Music Player using Html,Css and Vanilla js</title>
+</head>
+<body>
+  <section>
+    <!-- Header section -->
+    <header>
+       <img src="logo.png">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Music</a></li>
+        </ul>
+    </header>
+     <!-- container section -->
+    <div class="container">
+      <div class="left-col">
+        <h1>The <br> Real <br> Sound</h1>
+      </div>
+      <div class="right-col">
+        <p>click here to listen</p>
+         <li><img src="play.png" id="play-btn" onclick="playAudio()"></li>
+      </div>
+    </div>
+    <!-- Audio section -->
+    <audio id="audio-play">
+       <source src="Cream Blade - Daydream (feat. romi) [NCS Release](MP3_320K).mp3" type="audio/mp3">
+    </audio>
+  </section>
+  <script src="index.js"></script>
+</body>
+</html> 
